@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e228d8 #070d12;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #070d12;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e228d8;
+  border-radius: 20px;
+  border: 3px solid #070d12;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-image: url("../images/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.card {
+  background-color: #070d12;
+  width: 370px;
+  border: 2px solid #e126d9;
+  font-size: 18px;
+  color: #f3f3f3;
+  font-family: "VT323", monospace;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profile-picture {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 4px solid #02d08f;
+}
+
+.my-informations {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.name {
+  font-size: 26px;
+}
+
+.occupation {
+  font-size: 20px;
+  color: #b8bbc5;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.tabs {
+  display: flex;
+}
+.tabs img {
+  width: 30px;
+}
+.tabs .tab {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.tabs .tab.selected {
+  background-color: #262626;
+}
+
+.tab:hover {
+  background-color: #414141;
+}
+
+.tab-information {
+  background-color: #262626;
+}
+.tab-information .information {
+  min-height: 260px;
+  padding: 15px;
+}
+.tab-information .information .subtitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.tab-information .information .description {
+  font-size: 19px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+.tab-information .information .description span {
+  color: #02d08f;
+}
+.tab-information .information .social-networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.tab-information .information .social-networks li a {
+  width: 250px;
+  background-color: red;
+  display: block;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 10px;
+  font-size: 19px;
+  transition: opacity 0.3s ease-in-out;
+}
+.tab-information .information .social-networks .linkedin {
+  background-color: #1d87bd;
+}
+.tab-information .information .social-networks .github {
+  background-color: #545454;
+}
+
+.tab-information .information {
+  display: none;
+}
+
+.tab-information .information.selected {
+  display: block;
+}
+
+.social-networks li a:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */
